@@ -1,0 +1,23 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    class Employee {
+
+        String name;
+        int salary;
+        String address;
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/3006#comment
+status: Failed
+feedback:
+  message: |
+    Compilation error
+    Main.java:40: error: illegal start of expression
+        }
+        ^
+    1 error
+  time: Tue, 12 Oct 2021 19:59:16 UTC
+record: -1

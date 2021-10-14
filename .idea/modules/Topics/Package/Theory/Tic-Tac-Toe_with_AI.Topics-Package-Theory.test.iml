@@ -8,6 +8,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Tic-Tac-Toe_with_AI.Topics-Package-Theory.main" />
+    <orderEntry type="module" module-name="Tic-Tac-Toe_with_AI.util.main" />
+    <orderEntry type="module" module-name="Tic-Tac-Toe_with_AI.util.test" production-on-test="" />
     <orderEntry type="library" name="Gradle: com.github.hyperskill:hs-test:release-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Gradle: org.assertj:assertj-swing-junit:3.9.2" level="project" />
     <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />

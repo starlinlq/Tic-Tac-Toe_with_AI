@@ -5,7 +5,7 @@ class TicTacToe {
 
     int counter =  9;
     boolean isAWinner = false;
-    String user;
+    String user = "X";
     String computer;
     String move = "X";
     Ai computerAi;
@@ -37,20 +37,24 @@ class TicTacToe {
         System.out.println("-".repeat(9));
     }
 
+    public void setSymbol(String s) {
+        this.user = s;
+    }
+
     public void setComputerAi(Ai ai){
         this.computerAi = ai;
     }
 
-    public void  computerPLays(String move){
+    public void  computerPLays(){
         computerAi.play();
         decCounter();
-        verifyWinner(computerAi.move);
         printTable();
+        verifyWinner(computerAi.move);
     }
 
-    public void computerVsComputer(){
-        Ai ai1 = new Ai("X", this.table, Difficulty.EASY);
-        Ai ai2 = new Ai("O", this.table, Difficulty.EASY);
+    public void computerVsComputer(Difficulty a1, Difficulty a2){
+        Ai ai1 = new Ai("X", this.table, a1);
+        Ai ai2 = new Ai("O", this.table, a2);
         while(!isAWinner) {
             ai1.play();
             this.decCounter();
@@ -90,40 +94,18 @@ class TicTacToe {
         }
     }
 
+
+    public boolean verifyEmpty(int l1, int l2){
+        return table[l1][l2].equals(" ");
+    }
+
     public void playerPlays(int l1, int l2){
-        if (l1 > 2 || l1 < 0 || l2 > 2 || l2 < 0) {
-            System.out.println("Coordinates should be from 1 to 3!");
-            return;
-        }
-        if(table[l1][l2].equals(" ")) {
-            play(l1, l2);
-           decCounter();
-            verifyWinner(this.user);
-        } else {
-            System.out.println("This cell is occupied! Choose another one!");
-
-        }
+        play(l1, l2);
+        decCounter();
+        verifyWinner(this.user);
     }
 
-    public void computerVsPlayer(int l1, int l2) {
-        if(this.user.equals("X")){
-            playerPlays(l1, l2);
-            computerPLays(this.computer);
-        } else {
-            computerPLays(this.computer);
-            playerPlays(l1, l2);
-        }
-    }
 
-    public void setPLayers(String p1, String p2) {
-        if(p1.equals("user")){
-            this.user = "X";
-            this.computer = "O";
-        } else {
-            this.user = "O";
-            this.computer = "X";
-        }
-    }
 
     public boolean checkWinner1(String winner) {
 

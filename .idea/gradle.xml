@@ -11,6 +11,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Tic-Tac-Toe with AI/task" />
+            <option value="$PROJECT_DIR$/Topics/Abstract class/IntBinaryOperation" />
+            <option value="$PROJECT_DIR$/Topics/Abstract class/Theory" />
             <option value="$PROJECT_DIR$/Topics/Errors in programs/Fix compile-time errors" />
             <option value="$PROJECT_DIR$/Topics/Errors in programs/Fix the program" />
             <option value="$PROJECT_DIR$/Topics/Errors in programs/Print the age" />
@@ -23,6 +25,8 @@
             <option value="$PROJECT_DIR$/Topics/Getters and setters/Theory" />
             <option value="$PROJECT_DIR$/Topics/Inheritance/Classes for Hospital" />
             <option value="$PROJECT_DIR$/Topics/Inheritance/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Interface/Compact strings with AsciiCharSequence" />
+            <option value="$PROJECT_DIR$/Topics/Interface/Theory" />
             <option value="$PROJECT_DIR$/Topics/Multiple constructors/Employee" />
             <option value="$PROJECT_DIR$/Topics/Multiple constructors/Phone" />
             <option value="$PROJECT_DIR$/Topics/Multiple constructors/Theory" />
@@ -31,6 +35,8 @@
             <option value="$PROJECT_DIR$/Topics/Overloading/Theory" />
             <option value="$PROJECT_DIR$/Topics/Package/Binary search" />
             <option value="$PROJECT_DIR$/Topics/Package/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Polymorphism/Find mistake" />
+            <option value="$PROJECT_DIR$/Topics/Polymorphism/Theory" />
             <option value="$PROJECT_DIR$/Topics/Random/Generate random numbers" />
             <option value="$PROJECT_DIR$/Topics/Random/Theory" />
             <option value="$PROJECT_DIR$/Topics/The keyword super/Bank account" />
